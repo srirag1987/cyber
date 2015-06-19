@@ -1,0 +1,24 @@
+
+if(document.URL.indexOf("webuser/login.php") >= 0){ 
+  document.getElementsByName("dept")[0].value= "KPHQ      ";
+  document.getElementsByName("userid")[0].value= "kphq39";
+  document.getElementsByName("currentpasswd")[0].value = "dts6006mvd@@@@";
+  document.getElementsByName("captcha")[0].focus();
+}
+if(document.URL.indexOf("webuser/loginconfirm.php") >= 0){ 
+
+  document.getElementsByName("serialkey")[0].value= "67NXF7";
+  document.getElementsByName("Submit")[0].click();
+}
+if(document.URL.indexOf("webuser/adminhome.php") >= 0){ 
+
+  document.getElementsByName("webuserregnew")[0].click();
+}
+if(document.URL.indexOf("webuser/webuserregnew.php") >= 0){ 
+  setTimeout(function(){
+    window.location.reload();
+ }, 300000);
+}
+
+
+
